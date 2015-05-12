@@ -6,22 +6,56 @@
 
 package main;
 
+import java.util.Scanner;
+
 public class Cryptography {
 
 	public static void main(String[] args) {
-		
-		System.out.println("Welcome to the Cryptography program!"
-				+ "\nPlease select whether you would like to encrypt or decrypt."
-				+ "\n  Encrypt (1)\n  Decrypt (2)\n  :: ");
-		
-		//ADD SCANNER
-		
-		System.out.println("Encrypting string " + message + " with a shift of 3...");
-		System.out.println(e_shiftCipher(message, 3));
-		
-		System.out.println("Decrypting string " + encryption + " from a shift of 3...");
-		System.out.println(d_shiftCipher(encryption, 3));
 
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		boolean inMenu = true;
+
+		System.out.println("Welcome to the Cryptography program!");
+
+		while (inMenu == true) {
+			System.out.print("\nWould like to encrypt, decrypt, or crack a message?"
+					+ "\n  Encrypt (1)\n  Decrypt (2)\n  Crack a message (3)\n  Quit (4)\n  :: ");
+
+			int mode = scanner.nextInt();
+
+			if (mode == 1) {
+				encrypt();
+			} else if (mode == 2) {
+				decrypt();
+			} else if (mode == 3) {
+				crack();
+			} else if (mode == 4) {
+				inMenu = false;
+			} else {
+				//do nothing (re-loop)
+			}
+		}
+	}
+
+	public static void encrypt() {
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("What would you like to encrypt?\n  :: ");
+		String message = scanner.next();
+		
+	}
+
+	public static void decrypt() {
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("What would you like to decrypt?\n  :: ");
+		String codedMessage = scanner.next();
+		
+	}
+
+	public static void crack() {
+		//nothing yet
 	}
 
 }
