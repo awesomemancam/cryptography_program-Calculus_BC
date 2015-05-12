@@ -41,7 +41,7 @@ public class Cryptography {
 	public static void encrypt() {
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("What message would you like to encrypt?\n  :: ");
+		System.out.print("What message would you like to encrypt? (all non-English letters will be defaulted to spaces)\n  :: ");
 		String message = scanner.nextLine();
 		
 		System.out.print("How would you like to encrypt it?\n  Shift Cipher (1)\n  :: ");
@@ -55,9 +55,15 @@ public class Cryptography {
 	public static void decrypt() {
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("What would you like to decrypt?\n  :: ");
+		System.out.print("What message would you like to decrypt (all non-English letters will be defaulted to spaces)\n  :: ");
 		String codedMessage = scanner.nextLine();
 		
+		System.out.print("How would you like to decrypt it?\n  Shift Cipher (1)\n  :: ");
+		int cipherType = scanner.nextInt();
+		
+		String message = Decrypter.decrypt(codedMessage, cipherType);
+		
+		System.out.print("Your decrypted message is\n  :: " + message);
 	}
 
 	public static void crack() {

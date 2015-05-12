@@ -10,7 +10,7 @@ public class Encrypter {
 		if (cipherType == 1) {
 			@SuppressWarnings("resource")
 			Scanner scanner = new Scanner(System.in);
-			System.out.print("Shift number\n  :: ");
+			System.out.print("Shift number (no greater than 26)\n  :: ");
 			int i = scanner.nextInt();
 			codedMessage = e_shiftCipher(message, i);
 		}
@@ -24,7 +24,13 @@ public class Encrypter {
 		String encryption = "";
 		int[] bytes = new int[message.length()];
 		for (int j = 0; j < message.length(); j++) {
-			bytes[j] = ((int)message.charAt(j))+i;
+			if ((int)message.charAt(j) > 96 && (int)message.charAt(j) < 123) {
+				bytes[j] = ((((int)message.charAt(j)-97)+i)%26)+65;
+			} else if ((int)message.charAt(j) > 64 && (int)message.charAt(j) < 91) {
+				bytes[j] = ((((int)message.charAt(j)-65)+i)%26)+65;
+			} else {
+				bytes[j] = 32; //if unrecognized char - set to 'space'
+			}
 		}
 		for (int k = 0; k < message.length(); k++) {
 			encryption += (char)bytes[k];
