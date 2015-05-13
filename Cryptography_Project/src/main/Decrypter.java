@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Decrypter {
 	
-	private static String encryption;
+	private static String decryption;
 	
 	public static String decrypt(String message, int cipherType) {
 		String decodedMessage = null;
@@ -45,10 +45,23 @@ public class Decrypter {
 	}
 	
 	public static String d_wagstein(String message, int x) {
-		encryption = "";
+		decryption = "";
+		int[] bytes = new int[message.length()];
+		int[] coeff = new int[message.length()];
+		int powerCounter = 1;
+		for (int k = 0; k < message.length(); k++) {
+			if ((int)message.charAt(k) > 96 && (int)message.charAt(k) < 107) {
+				coeff[k] = (int)message.charAt(k)-95;
+				powerCounter++;
+			} else if ((int)message.charAt(k) > 64 && (int)message.charAt(k) < 75) {
+				coeff[k] = (int)message.charAt(k)-63;
+			} else if ((int)message.charAt(k) == 32) {
+				
+				powerCounter = 1;
+			}
+		}
 		
-		
-		return encryption;
+		return decryption;
 	}
 
 }

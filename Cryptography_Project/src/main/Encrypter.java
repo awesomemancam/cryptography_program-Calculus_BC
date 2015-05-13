@@ -58,13 +58,13 @@ public class Encrypter {
 				//lower-case
 				coeff[j] = ((int)message.charAt(j))-96;
 				pow = powerCounter-1;
-				bytes[j] = (int)(coeff[j]*Math.pow(x, pow));
+				bytes[j] = (int)(powerCounter*coeff[j]*Math.pow(x, pow));
 				powerCounter++;
 			} else if ((int)message.charAt(j) > 64 && (int)message.charAt(j) < 91) {
 				//upper-case
 				coeff[j] = ((int)message.charAt(j))-64;
 				pow = powerCounter-1;
-				bytes[j] = (int)(coeff[j]*Math.pow(x, pow));
+				bytes[j] = (int)(powerCounter*coeff[j]*Math.pow(x, pow));
 				powerCounter++;
 			} else {
 				bytes[j] = 0; //if unrecognized char - set to ZERO to identify a space
