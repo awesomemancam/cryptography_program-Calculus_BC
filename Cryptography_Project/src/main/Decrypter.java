@@ -18,8 +18,6 @@ public class Decrypter {
 		return decodedMessage;
 	}
 	
-	
-	
 	public static String d_shiftCipher(String message, int i) {
 		String decryption = "";
 		int[] bytes = new int[message.length()];
