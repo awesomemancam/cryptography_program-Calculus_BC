@@ -4,15 +4,22 @@ import java.util.Scanner;
 
 public class Decrypter {
 	
+	private static String encryption;
+	
 	public static String decrypt(String message, int cipherType) {
-		String decodedMessage = null; // TODO SET
+		String decodedMessage = null;
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
 		
 		if (cipherType == 1) {
-			@SuppressWarnings("resource")
-			Scanner scanner = new Scanner(System.in);
 			System.out.print("Shift number (no greater than 26)\n  :: ");
 			int i = scanner.nextInt();
 			decodedMessage = d_shiftCipher(message, i);
+		} else if (cipherType == 2) {
+			// WAGSTEIN CIPHER
+			System.out.print("Enter the value of x (1-10)\n  :: ");
+			int i = scanner.nextInt();
+			decodedMessage = d_wagstein(message, i);
 		}
 		
 		return decodedMessage;
@@ -35,6 +42,13 @@ public class Decrypter {
 		}
 		
 		return decryption;
+	}
+	
+	public static String d_wagstein(String message, int x) {
+		encryption = "";
+		
+		
+		return encryption;
 	}
 
 }

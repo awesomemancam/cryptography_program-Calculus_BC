@@ -17,10 +17,10 @@ public class Encrypter {
 			int i = scanner.nextInt();
 			codedMessage = e_shiftCipher(message, i);
 		} else if (cipherType == 2) {
-			// DIFFERENTIATION / INTEGRATION
+			// WAGSTEIN CIPHER
 			System.out.print("Enter the value of x (1-10)\n  :: ");
 			int i = scanner.nextInt();
-			codedMessage = e_diffInt(message, i);
+			codedMessage = e_wagstein(message, i);
 		}
 
 		return codedMessage;
@@ -47,23 +47,24 @@ public class Encrypter {
 		return encryption;
 	}
 	
-	public static String e_diffInt(String message, int x) {
+	public static String e_wagstein(String message, int x) {
 		encryption = "";
 		int[] bytes = new int[message.length()];
+		int[] coeff = new int[message.length()];
 		int powerCounter = 1;
 		int pow;
 		for (int j = 0; j < message.length(); j++) {
 			if ((int)message.charAt(j) > 96 && (int)message.charAt(j) < 123) {
 				//lower-case
-				bytes[j] = ((int)message.charAt(j))-96;
+				coeff[j] = ((int)message.charAt(j))-96;
 				pow = powerCounter-1;
-				bytes[j] = (int)(bytes[j]*Math.pow(x, pow));
+				bytes[j] = (int)(coeff[j]*Math.pow(x, pow));
 				powerCounter++;
 			} else if ((int)message.charAt(j) > 64 && (int)message.charAt(j) < 91) {
 				//upper-case
-				bytes[j] = ((int)message.charAt(j))-64;
+				coeff[j] = ((int)message.charAt(j))-64;
 				pow = powerCounter-1;
-				bytes[j] = (int)(bytes[j]*Math.pow(x, pow));
+				bytes[j] = (int)(coeff[j]*Math.pow(x, pow));
 				powerCounter++;
 			} else {
 				bytes[j] = 0; //if unrecognized char - set to ZERO to identify a space
@@ -90,7 +91,6 @@ public class Encrypter {
 			}
 			encryption += " ";
 		}
-		
 		return encryption;
 	}
 

@@ -42,12 +42,12 @@ public class Cryptography {
 		System.out.print("What message would you like to encrypt? (all non-English letters will be defaulted to spaces)\n  :: ");
 		String message = scanner.nextLine();
 		
-		System.out.print("How would you like to encrypt it?\n  Shift Cipher (1)\n  Differentiation/Integration (2)\n  :: ");
+		System.out.print("How would you like to encrypt it?\n  Shift Cipher (1)\n  Wagstein Cipher (2)\n  :: ");
 		int cipherType = scanner.nextInt();
 		
 		String codedMessage = Encrypter.encrypt(message, cipherType);
 		
-		System.out.print("Your encrypted message is\n  :: " + codedMessage + "\n-----\n");
+		System.out.print("Your encrypted message is\n  :: " + codedMessage + "\n\n-----");
 	}
 
 	public static void decrypt() {
@@ -56,12 +56,12 @@ public class Cryptography {
 		System.out.print("What message would you like to decrypt (all non-English letters will be defaulted to spaces)\n  :: ");
 		String codedMessage = scanner.nextLine();
 		
-		System.out.print("How would you like to decrypt it?\n  Shift Cipher (1)\n  Differentiation/Integration (2)\n  :: ");
+		System.out.print("How would you like to decrypt it?\n  Shift Cipher (1)\n  Wagstein Cipher (2)\n  :: ");
 		int cipherType = scanner.nextInt();
 		
 		String message = Decrypter.decrypt(codedMessage, cipherType);
 		
-		System.out.print("Your decrypted message is\n  :: " + message + "\n-----\n");
+		System.out.print("Your decrypted message is\n  :: " + message + "\n\n-----");
 	}
 
 	public static void crack() {
