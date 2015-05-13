@@ -46,20 +46,36 @@ public class Decrypter {
 	
 	public static String d_wagstein(String message, int x) {
 		decryption = "";
+		int[] value = new int[message.length()];
 		int[] bytes = new int[message.length()];
 		int[] coeff = new int[message.length()];
 		int powerCounter = 1;
 		for (int k = 0; k < message.length(); k++) {
 			if ((int)message.charAt(k) > 96 && (int)message.charAt(k) < 107) {
-				coeff[k] = (int)message.charAt(k)-95;
-				powerCounter++;
+				value[k] = (int)message.charAt(k)-97;
 			} else if ((int)message.charAt(k) > 64 && (int)message.charAt(k) < 75) {
-				coeff[k] = (int)message.charAt(k)-63;
-			} else if ((int)message.charAt(k) == 32) {
-				
-				powerCounter = 1;
+				value[k] = (int)message.charAt(k)-65;
+			} else {
+				value[k] = 32; //space
 			}
 		}
+		int sum = 0;
+		int i = 0;
+		for (int j = 0; j < value.length; j++) {
+			sum = 0;
+			if (value[j] == 32) {
+				//do nothing
+			} else {
+				while (value[j] != 32) {
+					sum *= 10;
+					sum += value[j];
+					j++;
+				}
+			}
+			bytes[i] = sum;
+			i++;
+		}
+		
 		
 		return decryption;
 	}
