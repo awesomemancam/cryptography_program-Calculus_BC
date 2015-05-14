@@ -21,6 +21,13 @@ public class Encrypter {
 			System.out.print("Enter the value of x (1-10)\n  :: ");
 			int i = scanner.nextInt();
 			codedMessage = e_wagstein(message, i);
+		} else if (cipherType == 3) {
+			// Vigenère CIPHER
+			System.out.print("Enter the keyword (one word)\n  :: ");
+			String keyword = scanner.next();
+			codedMessage = e_vigenère(message, keyword);
+		} else {
+			System.out.print("Invalid choice.");
 		}
 
 		return codedMessage;
@@ -91,6 +98,12 @@ public class Encrypter {
 			}
 			encryption += " ";
 		}
+		return encryption;
+	}
+	
+	public static String e_vigenère(String message, String keyword) {
+		encryption = "";
+		//TODO
 		return encryption;
 	}
 

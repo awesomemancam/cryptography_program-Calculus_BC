@@ -12,6 +12,7 @@ public class Decrypter {
 		Scanner scanner = new Scanner(System.in);
 
 		if (cipherType == 1) {
+			// SHIFT CIPHER
 			System.out.print("Shift number (no greater than 26)\n  :: ");
 			int i = scanner.nextInt();
 			decodedMessage = d_shiftCipher(message, i);
@@ -20,6 +21,13 @@ public class Decrypter {
 			System.out.print("Enter the value of x (1-10)\n  :: ");
 			int i = scanner.nextInt();
 			decodedMessage = d_wagstein(message+" ", i);
+		} else if (cipherType == 3) {
+			// Vigenère CIPHER
+			System.out.print("Enter the keyword (one word)\n  :: ");
+			String keyword = scanner.next();
+			decodedMessage = d_vigenère(message, keyword);
+		} else {
+			System.out.print("Invalid choice.");
 		}
 
 		return decodedMessage;
@@ -91,6 +99,12 @@ public class Decrypter {
 			}
 			decryption += (char)coeff[m];
 		}
+		return decryption;
+	}
+	
+	public static String d_vigenère(String message, String keyword) {
+		decryption = "";
+		//TODO
 		return decryption;
 	}
 

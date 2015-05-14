@@ -9,7 +9,7 @@ package main;
 import java.util.Scanner;
 
 public class Cryptography {
-	
+
 	public static void main(String[] args) {
 		boolean inMenu = true;
 		@SuppressWarnings("resource")
@@ -37,35 +37,56 @@ public class Cryptography {
 	}
 
 	public static void encrypt() {
-		@SuppressWarnings("resource")
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("What message would you like to encrypt? (all non-English letters will be defaulted to spaces)\n  :: ");
-		String message = scanner.nextLine();
-		
-		System.out.print("How would you like to encrypt it?\n  Shift Cipher (1)\n  Wagstein Cipher (2)\n  :: ");
-		int cipherType = scanner.nextInt();
-		
+		String message = askMessage(0);
+		int cipherType = askCipherType(0);
+
 		String codedMessage = Encrypter.encrypt(message, cipherType);
-		
+
 		System.out.print("Your encrypted message is\n  :: " + codedMessage + "\n\n-----");
 	}
 
 	public static void decrypt() {
-		@SuppressWarnings("resource")
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("What message would you like to decrypt (all non-English letters will be defaulted to spaces)\n  :: ");
-		String codedMessage = scanner.nextLine();
-		
-		System.out.print("How would you like to decrypt it?\n  Shift Cipher (1)\n  Wagstein Cipher (2)\n  :: ");
-		int cipherType = scanner.nextInt();
-		
+		String codedMessage = askMessage(1);
+		int cipherType = askCipherType(1);
+
 		String message = Decrypter.decrypt(codedMessage, cipherType);
-		
+
 		System.out.print("Your decrypted message is\n  :: " + message + "\n\n-----");
 	}
 
 	public static void crack() {
-		//nothing yet
+		String codedMessage = askMessage(2);
+		int cipherType = askCipherType(1);
+		
+		Cracker.crack(codedMessage, cipherType);
+	}
+
+	public static int askCipherType(int i) {
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("How would you like to ");
+		if (i == 0) {
+			System.out.print("en");
+		} else {
+			System.out.print("de");
+		}
+		System.out.print("crypt it?\n  Shift Cipher (1)\n  Wagstein Cipher (2)\n  Vigenère Cipher (3)\n  :: ");
+		return scanner.nextInt();
+	}
+
+	public static String askMessage(int i) {
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("What message would you like to ");
+		if (i == 0) {
+			System.out.print("encrypt");
+		} else if (i == 2) {
+			System.out.print("crack");
+		} else {
+			System.out.print("decrypt");
+		}
+		System.out.print("? (all non-English letters will be defaulted to spaces)\n  :: ");
+		return scanner.nextLine();
 	}
 
 }
