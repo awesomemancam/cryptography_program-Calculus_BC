@@ -18,7 +18,7 @@ public class Cracker {
 	}
 	
 	public static void c_shiftCipher(String codedMessage) {
-		//TODO
+		
 	}
 	
 }
