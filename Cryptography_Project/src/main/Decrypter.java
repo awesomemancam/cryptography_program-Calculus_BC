@@ -50,6 +50,7 @@ public class Decrypter {
 		int[] bytes = new int[message.length()];
 		int[] coeff = new int[message.length()];
 		int powerCounter = 1;
+		//load in values as 0-9 numbers or as "32" a space
 		for (int k = 0; k < message.length(); k++) {
 			if ((int)message.charAt(k) > 96 && (int)message.charAt(k) < 107) {
 				value[k] = (int)message.charAt(k)-97;
@@ -61,6 +62,7 @@ public class Decrypter {
 		}
 		int sum = 0;
 		int i = 0;
+		//compress sequential numbers 0-9 to multiple-digit numbers
 		for (int j = 0; j < value.length; j++) {
 			sum = 0;
 			if (value[j] == 32) {
@@ -75,6 +77,8 @@ public class Decrypter {
 			bytes[i] = sum;
 			i++;
 		}
+		//turn into words by dividing by x^nth letter in word and then dividing again by the nth-1 letter
+		//adding to return String
 		
 		
 		return decryption;
