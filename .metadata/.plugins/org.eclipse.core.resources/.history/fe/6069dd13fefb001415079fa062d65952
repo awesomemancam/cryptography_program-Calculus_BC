@@ -104,7 +104,6 @@ public class Encrypter {
 	public static String e_vigenère(String message, String keyword) {
 		encryption = "";
 		int[] messageBytes = new int[message.length()];
-		int[] keywordBytes = new int[keyword.length()];
 		for (int j = 0; j < message.length(); j++) {
 			if ((int)message.charAt(j) > 96 && (int)message.charAt(j) < 123) {
 				//lower-case
@@ -117,22 +116,16 @@ public class Encrypter {
 				messageBytes[j] = 32;
 			}
 		}
-		for (int j = 0; j < keyword.length(); j++) {
-			if ((int)keyword.charAt(j) > 96 && (int)keyword.charAt(j) < 123) {
+		for (int j = 0; j < message.length(); j++) {
+			if ((int)message.charAt(j) > 96 && (int)message.charAt(j) < 123) {
 				//lower-case
-				keywordBytes[j] = ((int)keyword.charAt(j))-96;
-			} else if ((int)keyword.charAt(j) > 64 && (int)keyword.charAt(j) < 91) {
+				messageBytes[j] = ((int)message.charAt(j))-97;
+			} else if ((int)message.charAt(j) > 64 && (int)message.charAt(j) < 91) {
 				//upper-case
-				keywordBytes[j] = ((int)keyword.charAt(j))-64;
-			}
-		}
-		int i = 0;
-		for (int k = 0; k < messageBytes.length; k++) {
-			if (messageBytes[k] == 32) {
-				encryption += " ";
+				messageBytes[j] = ((int)message.charAt(j))-65;
 			} else {
-				encryption += (char)(((messageBytes[k]+keywordBytes[i%keywordBytes.length])%26)+65);
-				i++;
+				//space
+				messageBytes[j] = 32;
 			}
 		}
 		return encryption;
