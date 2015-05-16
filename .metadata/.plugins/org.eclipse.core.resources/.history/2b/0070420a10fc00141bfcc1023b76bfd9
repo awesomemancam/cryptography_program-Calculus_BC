@@ -132,7 +132,7 @@ public class Decrypter {
 			if (messageBytes[k] == 32) {
 				decryption += " ";
 			} else {
-				decryption += (char)((((messageBytes[k]-keywordBytes[i%keywordBytes.length])+26)%26)+65);
+				decryption += (char)(((messageBytes[k]+keywordBytes[i%keywordBytes.length])%26)+65);
 				i++;
 			}
 		}
