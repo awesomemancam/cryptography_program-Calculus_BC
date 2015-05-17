@@ -220,8 +220,8 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_ZhvDk_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.editorss" selectedElement="_HA35EPy3EeSzS7ea9V_8QA">
-      <children xsi:type="basic:PartSashContainer" xmi:id="_HA35EPy3EeSzS7ea9V_8QA" selectedElement="_ZhvCYvhDEeSWmJpu_MvhZQ">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_z-TCYPp5EeSLk9reXRCsww" containerData="9788" selectedElement="_ZhvpQPhDEeSWmJpu_MvhZQ" horizontal="true">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_HA35EPy3EeSzS7ea9V_8QA" selectedElement="_z-TCYPp5EeSLk9reXRCsww">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_z-TCYPp5EeSLk9reXRCsww" containerData="13894" selectedElement="_ZhvpQPhDEeSWmJpu_MvhZQ" horizontal="true">
           <children xsi:type="basic:PartStack" xmi:id="_ZhvpQPhDEeSWmJpu_MvhZQ" elementId="org.eclipse.e4.primaryDataStack" containerData="5064" selectedElement="_lmGB0PyqEeSzS7ea9V_8QA">
             <tags>newtablook</tags>
             <tags>org.eclipse.e4.primaryDataStack</tags>
@@ -272,7 +272,7 @@
               </menus>
             </children>
             <children xsi:type="basic:Part" xmi:id="_lmGB0PyqEeSzS7ea9V_8QA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Dictionary.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Dictionary.java&quot; partName=&quot;Dictionary.java&quot; title=&quot;Dictionary.java&quot; tooltip=&quot;Cryptography_Project/src/main/Dictionary.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Cryptography_Project/src/main/Dictionary.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;558&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Dictionary.java&quot; partName=&quot;Dictionary.java&quot; title=&quot;Dictionary.java&quot; tooltip=&quot;Cryptography_Project/src/main/Dictionary.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Cryptography_Project/src/main/Dictionary.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;938&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
               <tags>Editor</tags>
               <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
               <tags>removeOnHide</tags>
@@ -282,7 +282,7 @@
           </children>
           <children xsi:type="basic:PartStack" xmi:id="_z-TCYfp5EeSLk9reXRCsww" elementId="PartStack@de599df" containerData="4936" selectedElement="_aTPZcPp5EeSLk9reXRCsww">
             <children xsi:type="basic:Part" xmi:id="_aTPZcPp5EeSLk9reXRCsww" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Cracker.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Cracker.java&quot; partName=&quot;Cracker.java&quot; title=&quot;Cracker.java&quot; tooltip=&quot;Cryptography_Project/src/main/Cracker.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Cryptography_Project/src/main/Cracker.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;627&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Cracker.java&quot; partName=&quot;Cracker.java&quot; title=&quot;Cracker.java&quot; tooltip=&quot;Cryptography_Project/src/main/Cracker.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Cryptography_Project/src/main/Cracker.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;828&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
               <tags>Editor</tags>
               <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
               <tags>removeOnHide</tags>
@@ -311,7 +311,7 @@
             </children>
           </children>
         </children>
-        <children xsi:type="basic:PartStack" xmi:id="_ZhvCYvhDEeSWmJpu_MvhZQ" elementId="bottom" containerData="7789" selectedElement="_ZhvCZ_hDEeSWmJpu_MvhZQ">
+        <children xsi:type="basic:PartStack" xmi:id="_ZhvCYvhDEeSWmJpu_MvhZQ" elementId="bottom" containerData="3683" selectedElement="_ZhvCZ_hDEeSWmJpu_MvhZQ">
           <tags>newtablook</tags>
           <tags>org.eclipse.e4.secondaryDataStack</tags>
           <children xsi:type="advanced:Placeholder" xmi:id="_ZhvCY_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.views.ProblemView" ref="_ZhvqEfhDEeSWmJpu_MvhZQ"/>
@@ -513,7 +513,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZhwQ3_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mmek9_yjEeSzS7ea9V_8QA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Zhz7s_hDEeSWmJpu_MvhZQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_uHGmh_zfEeSwkv1mPUPyhA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Zhz7s_hDEeSWmJpu_MvhZQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZhwQ7PhDEeSWmJpu_MvhZQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -546,7 +546,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZhwRP_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mmnu6fyjEeSzS7ea9V_8QA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Zhz7XPhDEeSWmJpu_MvhZQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_uHGmkfzfEeSwkv1mPUPyhA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Zhz7XPhDEeSWmJpu_MvhZQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZhwRSvhDEeSWmJpu_MvhZQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
