@@ -18,7 +18,38 @@ public class Cracker {
 	}
 	
 	public static void c_shiftCipher(String codedMessage) {
-		//TODO
+		System.out.println();
+		int bestMatch = 0;
+		int x = 0;
+		String bestDecryption = "";
+		for (int i = 1; i < 26; i++) {
+			String next = Decrypter.d_shiftCipher(codedMessage, i);
+			System.out.println("Shift " + i + ": " + next);
+			x = scanForWords(Decrypter.d_shiftCipher(codedMessage, i));
+			if (x > bestMatch) {
+				bestMatch = x;
+				bestDecryption = next;
+			}
+		}
+		System.out.println("\nBest Decryption with " + bestMatch + " matching words:\n  :: " + bestDecryption);
+	}
+	
+	public static int scanForWords(String message) {
+		message += " ";
+		int numWords = 0;
+		String word = "";
+		for (int i = 0; i < message.length(); i++) {
+			if ((int)message.charAt(i) == 32) {
+				if (Dictionary.searchDictionary(word)) {
+					numWords++;
+				}
+				word = "";
+			} else {
+				word += (char)((int)message.charAt(i)+32);
+			}
+		}
+		
+		return numWords;
 	}
 	
 }

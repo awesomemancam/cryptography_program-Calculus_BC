@@ -1,0 +1,35 @@
+package main;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Dictionary {
+
+	public static ArrayList<String> dictionary = new ArrayList<String>();
+	
+	public static void load() throws FileNotFoundException {
+		Scanner reader = new Scanner(new FileReader("\\My Documents\\TEST\\dictionary.txt"));
+		
+		while (reader.hasNext()) {
+			dictionary.add(reader.next());
+		}
+		
+		reader.close();
+	}
+	
+	public static boolean searchDictionary(String word) {
+		boolean wordExists = false;
+		for (int i = 0; i < dictionary.size(); i++) {
+			if (dictionary.get(i) == word) {
+				wordExists = true;
+				break;
+			}
+		}
+		
+		return wordExists;
+	}
+	
+}

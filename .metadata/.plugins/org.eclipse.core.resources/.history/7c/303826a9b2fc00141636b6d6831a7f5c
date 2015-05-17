@@ -1,0 +1,34 @@
+package main;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+public class Dictionary {
+
+	public static ArrayList<String> dictionary = new ArrayList<String>();
+	
+	public static void load() {
+		BufferedReader br = null;
+		br = new BufferedReader(new FileReader("dictionary.txt"));
+		
+		while (br.hasNext()) {
+			dictionary.add(br.readLine());
+		}
+		
+		reader.close();
+	}
+	
+	public static boolean searchDictionary(String word) {
+		boolean wordExists = false;
+		for (int i = 0; i < dictionary.size(); i++) {
+			if (dictionary.get(i) == word) {
+				wordExists = true;
+				break;
+			}
+		}
+		
+		return wordExists;
+	}
+	
+}
