@@ -8,6 +8,7 @@ public class Decrypter {
 
 	public static String decrypt(String message, int cipherType) {
 		String decodedMessage = null;
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 
 		if (cipherType == 1) {
@@ -29,7 +30,6 @@ public class Decrypter {
 			System.out.print("Invalid choice.");
 		}
 
-		scanner.close();
 		return decodedMessage;
 	}
 

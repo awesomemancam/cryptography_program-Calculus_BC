@@ -11,6 +11,8 @@ import java.util.Scanner;
 
 public class Cryptography {
 
+	private static Scanner menuScanner = new Scanner(System.in);
+	
 	public static void main(String[] args) {
 		try {
 			Dictionary.load();
@@ -26,9 +28,8 @@ public class Cryptography {
 	public static void menu() {
 		System.out.print("\n\nWould like to encrypt, decrypt, or crack a message?"
 				+ "\n  Encrypt (1)\n  Decrypt (2)\n  Crack a message (3)\n  Quit (4)\n  :: ");
-		@SuppressWarnings("resource")
-		Scanner scanner = new Scanner(System.in);
-		int mode = scanner.nextInt();
+		
+		int mode = menuScanner.nextInt();
 
 		if (mode == 1) {
 			encrypt();
@@ -38,6 +39,9 @@ public class Cryptography {
 			crack();
 		} else if (mode == 4) {
 			//terminate program
+		}
+		if (mode != 4) {
+			menu();
 		}
 	}
 
