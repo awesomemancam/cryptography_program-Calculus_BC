@@ -161,7 +161,7 @@
           <tags>persp.perspSC:org.eclipse.wst.jsdt.ui.JavaPerspective</tags>
           <tags>persp.actionSet:org.eclipse.wb.core.ui.actionset</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_ZhvCTvhDEeSWmJpu_MvhZQ" selectedElement="_ZhvCWfhDEeSWmJpu_MvhZQ" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_ZhvCT_hDEeSWmJpu_MvhZQ" containerData="1000" selectedElement="_ZhvCUPhDEeSWmJpu_MvhZQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_ZhvCT_hDEeSWmJpu_MvhZQ" containerData="1719" selectedElement="_ZhvCUPhDEeSWmJpu_MvhZQ">
               <children xsi:type="basic:PartStack" xmi:id="_ZhvCUPhDEeSWmJpu_MvhZQ" elementId="left" containerData="6000" selectedElement="_ZhvCUfhDEeSWmJpu_MvhZQ">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.primaryNavigationStack</tags>
@@ -176,7 +176,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_ZhvCV_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_ZhwQ2vhDEeSWmJpu_MvhZQ"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_ZhvCWfhDEeSWmJpu_MvhZQ" containerData="9000" selectedElement="_ZhvCWvhDEeSWmJpu_MvhZQ" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_ZhvCWfhDEeSWmJpu_MvhZQ" containerData="8281" selectedElement="_ZhvCWvhDEeSWmJpu_MvhZQ" horizontal="true">
               <children xsi:type="advanced:Placeholder" xmi:id="_ZhvCWvhDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.editorss" containerData="865" ref="_ZhvDk_hDEeSWmJpu_MvhZQ"/>
               <children xsi:type="basic:PartSashContainer" xmi:id="_ZhvCW_hDEeSWmJpu_MvhZQ" visible="false" containerData="1558" selectedElement="_ZhvCXvhDEeSWmJpu_MvhZQ">
                 <children xsi:type="basic:PartStack" xmi:id="_ZhvCXPhDEeSWmJpu_MvhZQ" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" toBeRendered="false" containerData="5000">
@@ -220,19 +220,16 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_ZhvDk_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.editorss" selectedElement="_HA35EPy3EeSzS7ea9V_8QA">
-      <children xsi:type="basic:PartSashContainer" xmi:id="_HA35EPy3EeSzS7ea9V_8QA" selectedElement="_ZhvpQPhDEeSWmJpu_MvhZQ">
-        <children xsi:type="basic:PartStack" xmi:id="_ZhvpQPhDEeSWmJpu_MvhZQ" elementId="org.eclipse.e4.primaryDataStack" containerData="12825" selectedElement="_ZhvpQfhDEeSWmJpu_MvhZQ">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_HA35EPy3EeSzS7ea9V_8QA" selectedElement="_ZhvCYvhDEeSWmJpu_MvhZQ">
+        <children xsi:type="basic:PartStack" xmi:id="_ZhvpQPhDEeSWmJpu_MvhZQ" elementId="org.eclipse.e4.primaryDataStack" containerData="12825" selectedElement="_lmGB0PyqEeSzS7ea9V_8QA">
           <tags>newtablook</tags>
           <tags>org.eclipse.e4.primaryDataStack</tags>
           <tags>EditorStack</tags>
-          <tags>active</tags>
           <children xsi:type="basic:Part" xmi:id="_ZhvpQfhDEeSWmJpu_MvhZQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Cryptography.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
             <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Cryptography.java&quot; partName=&quot;Cryptography.java&quot; title=&quot;Cryptography.java&quot; tooltip=&quot;Cryptography_Project/src/main/Cryptography.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Cryptography_Project/src/main/Cryptography.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;532&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
             <tags>removeOnHide</tags>
-            <tags>active</tags>
-            <tags>activeOnClose</tags>
             <menus xsi:type="menu:PopupMenu" xmi:id="_ZhvpQvhDEeSWmJpu_MvhZQ" elementId="#CompilationUnitEditorContext">
               <tags>menuContribution:popup</tags>
               <tags>popup:#CompilationUnitEditorContext</tags>
@@ -301,7 +298,7 @@
             <tags>removeOnHide</tags>
           </children>
           <children xsi:type="basic:Part" xmi:id="_lmGB0PyqEeSzS7ea9V_8QA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Dictionary.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Dictionary.java&quot; partName=&quot;Dictionary.java&quot; title=&quot;Dictionary.java&quot; tooltip=&quot;Cryptography_Project/src/main/Dictionary.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Cryptography_Project/src/main/Dictionary.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;3&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;645&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Dictionary.java&quot; partName=&quot;Dictionary.java&quot; title=&quot;Dictionary.java&quot; tooltip=&quot;Cryptography_Project/src/main/Dictionary.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Cryptography_Project/src/main/Dictionary.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;593&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
             <tags>removeOnHide</tags>
@@ -310,6 +307,7 @@
         <children xsi:type="basic:PartStack" xmi:id="_ZhvCYvhDEeSWmJpu_MvhZQ" elementId="bottom" containerData="4752" selectedElement="_ZhvCZ_hDEeSWmJpu_MvhZQ">
           <tags>newtablook</tags>
           <tags>org.eclipse.e4.secondaryDataStack</tags>
+          <tags>active</tags>
           <children xsi:type="advanced:Placeholder" xmi:id="_ZhvCY_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.views.ProblemView" ref="_ZhvqEfhDEeSWmJpu_MvhZQ"/>
           <children xsi:type="advanced:Placeholder" xmi:id="_ZhvCZPhDEeSWmJpu_MvhZQ" elementId="org.eclipse.jdt.ui.JavadocView" ref="_ZhwQ1vhDEeSWmJpu_MvhZQ"/>
           <children xsi:type="advanced:Placeholder" xmi:id="_ZhvCZfhDEeSWmJpu_MvhZQ" elementId="org.eclipse.jdt.ui.SourceView" ref="_ZhwQ1_hDEeSWmJpu_MvhZQ"/>
@@ -398,6 +396,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_ZhvqI_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -509,7 +509,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZhwQ3_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_55X3Ff1VEeS0BcCOKXikUQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Zhz7s_hDEeSWmJpu_MvhZQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ZCzF0v1ZEeSGhYjk8Ng9fg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Zhz7s_hDEeSWmJpu_MvhZQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZhwQ7PhDEeSWmJpu_MvhZQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -542,7 +542,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZhwRP_hDEeSWmJpu_MvhZQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_55a6YP1VEeS0BcCOKXikUQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Zhz7XPhDEeSWmJpu_MvhZQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ZC3-UP1ZEeSGhYjk8Ng9fg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Zhz7XPhDEeSWmJpu_MvhZQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZhwRSvhDEeSWmJpu_MvhZQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

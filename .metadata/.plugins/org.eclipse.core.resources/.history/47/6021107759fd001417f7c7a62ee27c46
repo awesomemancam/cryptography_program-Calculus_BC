@@ -13,7 +13,7 @@ public class Dictionary {
 	
 	public static void load() throws IOException {
 		BufferedReader br = null;
-		br = new BufferedReader(new FileReader(currentDirectory + "\\src\\main\\resources\\dictionary.txt"));
+		br = new BufferedReader(new FileReader(currentDirectory + "\\src\\main\\dictionary.txt"));
 		String currentLine;
 		while ((currentLine = br.readLine()) != null) {
 			dictionary.add(currentLine);
