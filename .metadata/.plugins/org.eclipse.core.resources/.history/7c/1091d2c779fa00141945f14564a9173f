@@ -1,9 +1,0 @@
-package main;
-
-public class Cracker {
-
-	public static void crack(String codedMessage, String cipherType) {
-		
-	}
-	
-}
