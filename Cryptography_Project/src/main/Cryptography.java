@@ -11,7 +11,9 @@ import java.util.Scanner;
 
 public class Cryptography {
 
+	//declaration of var
 	private static Scanner menuScanner = new Scanner(System.in);
+	
 	
 	public static void main(String[] args) {
 		try {
